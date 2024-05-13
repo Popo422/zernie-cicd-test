@@ -7,3 +7,5 @@ const app = new cdk.App();
 new CdkCicdZernieStack(app, 'CdkCicdZernieStack', {
 
 });
+
+app.synth()
