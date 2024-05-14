@@ -31,7 +31,7 @@ export class CdkCicdZernieStack extends cdk.Stack {
 
     testStage.addPre(
       new CodeBuildStep("unit-tests", {
-        commands: ["cd cdk-cicd", "npm ci", "npm test"],
+        commands: ["npm ci", "npm test"],
       })
     );
   }
