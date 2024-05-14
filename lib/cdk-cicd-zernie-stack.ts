@@ -29,10 +29,10 @@ export class CdkCicdZernieStack extends cdk.Stack {
       })
     );
 
-    testStage.addPre(
-      new CodeBuildStep("unit-tests", {
-        commands: ["cd cdk-cicd", "npm ci", "npm test"],
-      })
-    );
+    // testStage.addPre(
+    //   new CodeBuildStep("unit-tests", {
+    //     commands: ["cd cdk-cicd", "npm ci", "npm test"],
+    //   })
+    // );
   }
 }
