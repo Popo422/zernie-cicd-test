@@ -5,7 +5,6 @@ import { CdkCicdZernieStack } from '../lib/cdk-cicd-zernie-stack';
 
 const app = new cdk.App();
 new CdkCicdZernieStack(app, 'CdkCicdZernieStack', {
-
 });
 
 app.synth()
